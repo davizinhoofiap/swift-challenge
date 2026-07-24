@@ -25,6 +25,15 @@ Acesse a aplicação funcionando ao vivo:
 
 ---
 
+## 🔐 Credenciais de Acesso (Demonstração)
+
+A página inicial do sistema é a **Tela de Login**. Por ser um protótipo interativo de demonstração:
+- **E-mail:** Qualquer e-mail (ex: `vendedor@swift.com.br`)
+- **Senha:** Qualquer senha (ex: `123456`)
+- **Acesso Direto:** Basta clicar no botão **Login** para entrar no painel principal da plataforma (`Dashboard`).
+
+---
+
 ## 📁 Arquitetura Limpa do Projeto
 
 ```text

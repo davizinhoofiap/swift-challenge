@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoções - Swift</title>
+  <link rel="icon" type="image/jpeg" href="../../assets/images/brand/logo-swift.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/promocoes.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row min-vh-100">
+      <div class="col-auto sidebar px-0">
+        <aside class="sidebar-card">
+          <div class="sidebar-logo">
+            <img src="../../assets/images/brand/logo-swift.jpg" alt="Logo Swift" class="logo-swift">
+          </div>
+          <nav class="sidebar-nav" id="menu">
+            <a href="../dashboard.html" class="sidebar-link"><i class="bi bi-bullseye"></i> <span class="sidebar-text">Metas</span></a>
+            <a href="./index.html" class="sidebar-link sidebar-link-active"><i class="bi bi-tag"></i> <span class="sidebar-text">Promoções</span></a>
+            <a href="../ranking.html" class="sidebar-link"><i class="bi bi-bar-chart-line"></i> <span class="sidebar-text">Ranking</span></a>
+            <a href="../loja-pontos.html" class="sidebar-link"><i class="bi bi-coin"></i> <span class="sidebar-text">Loja de Pontos</span></a>
+            <a href="../treinamento.html" class="sidebar-link"><i class="bi bi-person-workspace"></i> <span class="sidebar-text">Treinamento</span></a>
+            <a href="../../index.html" class="sidebar-link sidebar-link-logout"><i class="bi bi-box-arrow-left"></i> <span class="sidebar-text">Sair</span></a>
+          </nav>
+        </aside>
+      </div>
+
+      <div class="col p-0 promo-content">
+        <div class="header-top p-3 d-flex justify-content-between align-items-center promo-header">
+          <div class="store-info">
+            <div class="store-label">Loja #546 · Swift</div>
+            <p class="mb-0 store-location"><i class="bi bi-geo-alt-fill"></i> Green River, GO</p>
+          </div>
+          <div class="promo-header-actions d-flex align-items-center gap-3">
+            <div class="loja text-white fw-semibold mb-0">Loja <span class="etq">#546</span></div>
+            <button type="button" class="btn btn-outline-light btn-sm btn-menu" id="abrir"><i class="bi bi-list"></i></button>
+          </div>
+        </div>
+
+        <main class="promo-main">
+          <h1 class="titulo">Promoções</h1>
+
+          <div class="linha-filtro">
+            <div class="filtros">
+              <button class="filtro ativo" data-tipo="todos">Todos</button>
+              <button class="filtro" data-tipo="bovinos">Bovinos</button>
+              <button class="filtro" data-tipo="suinos">Suínos</button>
+              <button class="filtro" data-tipo="aves">Aves</button>
+              <button class="filtro" data-tipo="moidos">Moídos</button>
+              <button class="filtro" data-tipo="churrasco">Churrasco</button>
+            </div>
+            <div class="pontos">
+              <p class="p-tit">Seus Pontos</p>
+              <p class="p-val">45</p>
+            </div>
+          </div>
+
+          <div class="grade">
+            <div class="card" data-cat="bovinos churrasco">
+              <img src="../../assets/images/products/picanha.jpg" alt="Picanha" class="img">
+              <div class="info">
+                <span class="etq-oferta">OFERTA</span>
+                <h2 class="nome">Picanha Bovina</h2>
+                <p class="preco">R$ 69,90/kg <span class="de">de R$ 89,90/kg</span></p>
+                <p class="desc">Picanha macia e suculenta, ideal para churrascos e grelhados.</p>
+                <a href="picanha.html" class="btn-ver">Ver Detalhes</a>
+              </div>
+            </div>
+
+            <div class="card" data-cat="suinos churrasco">
+              <img src="../../assets/images/products/costela-suina.jpg" alt="Costela Suína" class="img">
+              <div class="info">
+                <span class="etq-oferta">OFERTA</span>
+                <h2 class="nome">Costela Suína</h2>
+                <p class="preco">R$ 24,90/kg <span class="de">de R$ 32,90/kg</span></p>
+                <p class="desc">Costela suculenta e marmorizada, ideal para forno ou churrasqueira.</p>
+                <a href="costela-suina.html" class="btn-ver">Ver Detalhes</a>
+              </div>
+            </div>
+
+            <div class="card" data-cat="bovinos churrasco">
+              <img src="../../assets/images/products/fraldinha.jpg" alt="Fraldinha" class="img">
+              <div class="info">
+                <span class="etq-oferta">OFERTA</span>
+                <h2 class="nome">Fraldinha</h2>
+                <p class="preco">R$ 39,90/kg <span class="de">de R$ 49,90/kg</span></p>
+                <p class="desc">Corte macio e suculento, ótimo para grelhar ou assar.</p>
+                <a href="fraldinha.html" class="btn-ver">Ver Detalhes</a>
+              </div>
+            </div>
+
+            <div class="card" data-cat="suinos churrasco">
+              <img src="../../assets/images/products/costela-porco.jpg" alt="Costela de Porco" class="img">
+              <div class="info">
+                <span class="etq-oferta">OFERTA</span>
+                <h2 class="nome">Costela de Porco</h2>
+                <p class="preco">R$ 19,90/kg <span class="de">de R$ 26,90/kg</span></p>
+                <p class="desc">Carne suína saborosa, ideal para assados lentos e churrascos.</p>
+                <a href="costela-porco.html" class="btn-ver">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/promocoes.js"></script>
+</body>
+</html>

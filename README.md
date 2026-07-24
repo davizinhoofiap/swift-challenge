@@ -21,7 +21,7 @@ Aplicação Web Front-end interativa desenvolvida para a **Swift (JBS)** como pa
 ## 🌐 Link de Acesso Online (GitHub Pages)
 
 Acesse a aplicação funcionando ao vivo:
-👉 **[https://peruchi44.github.io/Challenge/](https://peruchi44.github.io/Challenge/)**
+👉 **[https://davizinhoofiap.github.io/swift-challenge/](https://davizinhoofiap.github.io/swift-challenge/)**
 
 ---
 

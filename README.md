@@ -1,40 +1,32 @@
-# FIAP + Swift (JBS Challenge) - Sistema Gamificado de Gestão & Vendas
+# Swift (JBS Challenge) - Sistema Gamificado de Gestão e Vendas
 
-> **Sprint 2: Gamificação para Equipes Swift**
-
-Aplicação Web Front-end interativa desenvolvida para a **Swift (JBS)** como parte do **FIAP Challenge**. A plataforma utiliza estratégias de gamificação (missões diárias, metas semanais/mensais, ranking de colaboradores/lojas, loja de resgate de pontos e microtreinamentos) para aumentar o engajamento das equipes de loja, elevar o NPS e alavancar o ticket médio.
+Aplicação Web Front-end interativa desenvolvida para a Swift (JBS). A plataforma utiliza estratégias de gamificação (missões diárias, metas semanais e mensais, ranking de colaboradores e lojas, loja de resgate de pontos e microtreinamentos) para aumentar o engajamento das equipes de loja, elevar o NPS e alavancar o ticket médio.
 
 ---
 
-## 👥 Integrantes do Grupo
+## Desenvolvedor
 
-| Nome | RM |
-| :--- | :--- |
-| **Davi Victor Monte da Silva** | 563104 |
-| **Fernando Vasconcelos Peruchi** | 564687 |
-| **João Vitor Bernardo** | 564687 |
-| **Lara Lima Mota** | 563560 |
-| **Victor Hugo Cadina da Silva** | 565544 |
+- **Davi Victor Monte da Silva**
 
 ---
 
-## 🌐 Link de Acesso Online (GitHub Pages)
+## Link de Acesso Online (GitHub Pages)
 
-Acesse a aplicação funcionando ao vivo:
-👉 **[https://davizinhoofiap.github.io/swift-challenge/](https://davizinhoofiap.github.io/swift-challenge/)**
+Acesse a aplicação funcionando ao vivo:  
+[https://davizinhoofiap.github.io/swift-challenge/](https://davizinhoofiap.github.io/swift-challenge/)
 
 ---
 
-## 🔐 Credenciais de Acesso (Demonstração)
+## Credenciais de Acesso (Demonstração)
 
-A página inicial do sistema é a **Tela de Login**. Por ser um protótipo interativo de demonstração:
+A página inicial do sistema é a Tela de Login. Por ser um protótipo interativo de demonstração:
 - **E-mail:** Qualquer e-mail (ex: `vendedor@swift.com.br`)
 - **Senha:** Qualquer senha (ex: `123456`)
-- **Acesso Direto:** Basta clicar no botão **Login** para entrar no painel principal da plataforma (`Dashboard`).
+- **Acesso Direto:** Basta clicar no botão Login para entrar no painel principal da plataforma (`dashboard.html`).
 
 ---
 
-## 📁 Arquitetura Limpa do Projeto
+## Arquitetura do Projeto
 
 ```text
 Challenge/
@@ -71,20 +63,9 @@ Challenge/
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5**: Estruturação semântica de páginas
 - **CSS3 / Vanilla CSS**: Layouts responsivos e estilização modular
 - **Bootstrap 5 & Bootstrap Icons**: Grid responsivo, modais e iconografia
 - **JavaScript (ES6+)**: Filtros de categoria e manipulação dinâmica de DOM
-
----
-
-## ⚙️ Como Ativar o GitHub Pages no Repositório
-
-Para garantir que o link público funcione para qualquer pessoa:
-
-1. No repositório no GitHub, vá em **Settings** (Configurações).
-2. No menu lateral esquerdo, clique em **Pages**.
-3. Em **Build and deployment** $\rightarrow$ **Branch**, selecione a branch `main` e a pasta `/ (root)`.
-4. Clique em **Save**. Em instantes, o site estará no ar no link informado acima!

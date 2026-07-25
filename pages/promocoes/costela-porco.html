@@ -1,103 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Costela de Porco - Swift</title>
-  <link rel="icon" type="image/jpeg" href="../../assets/images/brand/logo-swift.jpg">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/base.css">
-  <link rel="stylesheet" href="../../assets/css/promocoes.css">
-</head>
-<body>
-  <div class="container-fluid">
-    <div class="row min-vh-100">
-      <div class="col-auto sidebar px-0">
-        <aside class="sidebar-card">
-          <div class="sidebar-logo">
-            <img src="../../assets/images/brand/logo-swift.jpg" alt="Logo Swift" class="logo-swift">
-          </div>
-          <nav class="sidebar-nav">
-            <a href="../dashboard.html" class="sidebar-link"><i class="bi bi-bullseye"></i> <span class="sidebar-text">Metas</span></a>
-            <a href="./index.html" class="sidebar-link sidebar-link-active"><i class="bi bi-tag"></i> <span class="sidebar-text">Promoções</span></a>
-            <a href="../ranking.html" class="sidebar-link"><i class="bi bi-bar-chart-line"></i> <span class="sidebar-text">Ranking</span></a>
-            <a href="../loja-pontos.html" class="sidebar-link"><i class="bi bi-coin"></i> <span class="sidebar-text">Loja de Pontos</span></a>
-            <a href="../treinamento.html" class="sidebar-link"><i class="bi bi-person-workspace"></i> <span class="sidebar-text">Treinamento</span></a>
-            <a href="../../index.html" class="sidebar-link sidebar-link-logout"><i class="bi bi-box-arrow-left"></i> <span class="sidebar-text">Sair</span></a>
-          </nav>
-        </aside>
-      </div>
-
-      <div class="col p-0 promo-content">
-        <div class="header-top p-3 d-flex justify-content-between align-items-center promo-header">
-          <div class="store-info">
-            <div class="store-label">Loja #546 · Swift</div>
-            <p class="mb-0 store-location"><i class="bi bi-geo-alt-fill"></i> Green River, GO</p>
-          </div>
-          <div class="promo-header-actions d-flex align-items-center gap-3">
-            <div class="loja text-white fw-semibold mb-0">Loja <span class="etq">#546</span></div>
-            <div class="promo-points d-none d-md-flex align-items-center gap-2 text-white">
-              <i class="bi bi-star-fill"></i><span>45 pts</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costela de Porco - Swift</title>
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="../../assets/images/brand/logo-swift.jpg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+    <link rel="stylesheet" href="../../assets/css/promocoes.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        <div class="col-auto sidebar px-0">
+          <aside class="sidebar-card">
+            <div class="sidebar-logo">
+              <img
+                src="../../assets/images/brand/logo-swift.jpg"
+                alt="Logo Swift"
+                class="logo-swift"
+              />
             </div>
-            <a href="index.html" class="btn btn-outline-light btn-sm d-flex align-items-center gap-1"><i class="bi bi-arrow-left"></i> Voltar</a>
-          </div>
+            <nav class="sidebar-nav">
+              <a href="../dashboard.html" class="sidebar-link"
+                ><i class="bi bi-bullseye"></i>
+                <span class="sidebar-text">Metas</span></a
+              >
+              <a href="./index.html" class="sidebar-link sidebar-link-active"
+                ><i class="bi bi-tag"></i>
+                <span class="sidebar-text">Promoções</span></a
+              >
+              <a href="../ranking.html" class="sidebar-link"
+                ><i class="bi bi-bar-chart-line"></i>
+                <span class="sidebar-text">Ranking</span></a
+              >
+              <a href="../loja-pontos.html" class="sidebar-link"
+                ><i class="bi bi-coin"></i>
+                <span class="sidebar-text">Loja de Pontos</span></a
+              >
+              <a href="../treinamento.html" class="sidebar-link"
+                ><i class="bi bi-person-workspace"></i>
+                <span class="sidebar-text">Treinamento</span></a
+              >
+              <a
+                href="../../index.html"
+                class="sidebar-link sidebar-link-logout"
+                ><i class="bi bi-box-arrow-left"></i>
+                <span class="sidebar-text">Sair</span></a
+              >
+            </nav>
+          </aside>
         </div>
 
-        <main class="promo-main">
-          <div class="card card-prod">
-            <img src="../../assets/images/products/costela-porco.jpg" alt="Costela de Porco" class="img img-prod">
-            <div class="info">
-              <span class="etq-oferta">OFERTA</span>
-              <h1 class="nome">Costela de Porco</h1>
-              <p class="preco">R$ 19,90/kg <span class="de">de R$ 26,90/kg</span></p>
-
-              <div class="recompensa" tabindex="-1">
-                <i class="bi bi-trophy-fill"></i>
-                <span>Você desbloqueou esta promoção</span>
-                <button type="button" class="botao-resgatar" data-bs-toggle="modal" data-bs-target="#modalRecompensa">Resgatar agora</button>
+        <div class="col p-0 promo-content">
+          <div
+            class="header-top p-3 d-flex justify-content-between align-items-center promo-header"
+          >
+            <div class="store-info">
+              <div class="store-label">Loja #546 · Swift</div>
+              <p class="mb-0 store-location">
+                <i class="bi bi-geo-alt-fill"></i> Green River, GO
+              </p>
+            </div>
+            <div class="promo-header-actions d-flex align-items-center gap-3">
+              <div class="loja text-white fw-semibold mb-0">
+                Loja <span class="etq">#546</span>
               </div>
-
-              <div class="sub">Descrição Geral</div>
-              <p class="desc">Costela com capa crocante e interior desfiando. Perfeita para sanduíches, tábuas e almoço de fim de semana.</p>
-
-              <div class="sub">Modo de Preparo</div>
-              <ul class="lista-preparo">
-                <li><b>Forno:</b> 180°C por 60–80 min, finalizar 10 min em 220°C.</li>
-                <li><b>Defumada:</b> 120–140°C por 3–4 h.</li>
-                <li><b>Airfryer:</b> 200°C por 18–22 min.</li>
-              </ul>
-
-              <hr>
-              <div class="sub">Receitas</div>
-              <h3 class="nome" style="font-size:20px">Costela ao Molho Barbecue</h3>
-              <p><b>Ingredientes:</b> costela, sal grosso, pimenta e molho barbecue.</p>
-              <p><b>Preparo:</b> asse por 60 minutos, pincele o molho e finalize dourando por mais 10 minutos.</p>
-              <h3 class="nome" style="font-size:20px">Costela Desfiada</h3>
-              <p><b>Ingredientes:</b> costela, cebola, alho, ervas frescas.</p>
-              <p><b>Preparo:</b> cozinhe lentamente até desfiar e finalize na frigideira com as ervas.</p>
+              <div
+                class="promo-points d-none d-md-flex align-items-center gap-2 text-white"
+              >
+                <i class="bi bi-star-fill"></i><span>45 pts</span>
+              </div>
+              <a
+                href="index.html"
+                class="btn btn-outline-light btn-sm d-flex align-items-center gap-1"
+                ><i class="bi bi-arrow-left"></i> Voltar</a
+              >
             </div>
           </div>
-        </main>
 
-        <div class="modal fade" id="modalRecompensa" tabindex="-1" aria-labelledby="modalRecompensaLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalRecompensaLabel">Recompensa Resgatada!</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          <main class="promo-main">
+            <div class="card card-prod">
+              <img
+                src="../../assets/images/products/costela-porco.jpg"
+                alt="Costela de Porco"
+                class="img img-prod"
+              />
+              <div class="info">
+                <span class="etq-oferta">OFERTA</span>
+                <h1 class="nome">Costela de Porco</h1>
+                <p class="preco">
+                  R$ 19,90/kg <span class="de">de R$ 26,90/kg</span>
+                </p>
+
+                <div class="recompensa" tabindex="-1">
+                  <i class="bi bi-trophy-fill"></i>
+                  <span>Você desbloqueou esta promoção</span>
+                  <button
+                    type="button"
+                    class="botao-resgatar"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalRecompensa"
+                  >
+                    Resgatar agora
+                  </button>
+                </div>
+
+                <div class="sub">Descrição Geral</div>
+                <p class="desc">
+                  Costela com capa crocante e interior desfiando. Perfeita para
+                  sanduíches, tábuas e almoço de fim de semana.
+                </p>
+
+                <div class="sub">Modo de Preparo</div>
+                <ul class="lista-preparo">
+                  <li>
+                    <b>Forno:</b> 180°C por 60–80 min, finalizar 10 min em
+                    220°C.
+                  </li>
+                  <li><b>Defumada:</b> 120–140°C por 3–4 h.</li>
+                  <li><b>Airfryer:</b> 200°C por 18–22 min.</li>
+                </ul>
+
+                <hr />
+                <div class="sub">Receitas</div>
+                <h3 class="nome" style="font-size: 20px">
+                  Costela ao Molho Barbecue
+                </h3>
+                <p>
+                  <b>Ingredientes:</b> costela, sal grosso, pimenta e molho
+                  barbecue.
+                </p>
+                <p>
+                  <b>Preparo:</b> asse por 60 minutos, pincele o molho e
+                  finalize dourando por mais 10 minutos.
+                </p>
+                <h3 class="nome" style="font-size: 20px">Costela Desfiada</h3>
+                <p>
+                  <b>Ingredientes:</b> costela, cebola, alho, ervas frescas.
+                </p>
+                <p>
+                  <b>Preparo:</b> cozinhe lentamente até desfiar e finalize na
+                  frigideira com as ervas.
+                </p>
               </div>
-              <div class="modal-body">
-                Ótimo trabalho! Você garantiu a promoção da costela de porco para seu cliente.
+            </div>
+          </main>
+
+          <div
+            class="modal fade"
+            id="modalRecompensa"
+            tabindex="-1"
+            aria-labelledby="modalRecompensaLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalRecompensaLabel">
+                    Recompensa Resgatada!
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Fechar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Ótimo trabalho! Você garantiu a promoção da costela de porco
+                  para seu cliente.
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

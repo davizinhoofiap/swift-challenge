@@ -1,164 +1,164 @@
 * {
-    color: rgb(255, 255, 255);
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    min-height: auto;
-    background-image: url(../images/brand/full-body.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: auto;
+  background-image: url(../images/brand/full-body.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.lembrar-senha{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-    background-color: transparent;
-    font-weight: 600;
+.lembrar-senha {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+  background-color: transparent;
+  font-weight: 600;
 }
-.container{
-    width: 420px;
-    height: auto;
-    background-color: transparent;
-    border-radius: 40px;
-    backdrop-filter: blur(2px);
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    border-radius: 30px;
-    padding: 30px 40px;
-}
-
-.container .input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    background-color: transparent;
-    margin: 30px 0; 
+.container {
+  width: 420px;
+  height: auto;
+  background-color: transparent;
+  border-radius: 40px;
+  backdrop-filter: blur(2px);
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 30px 40px;
 }
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid orangered;
-    border-radius: 40px;
-    color: white;
-    font-size: 16px;
-    padding: 20px 45px 20px 20px;
-    font-weight: 600;
+.container .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  margin: 30px 0;
 }
 
-.input-box input::placeholder{
-    color: rgb(255, 255, 255);
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid orangered;
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  font-weight: 600;
 }
 
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    background-color: transparent;
+.input-box input::placeholder {
+  color: rgb(255, 255, 255);
 }
 
-.container .Lembrar{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-    background-color: transparent;
-    font-weight: 600;
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background-color: transparent;
 }
 
-.lembrar-senha label{
-    accent-color: rgb(0, 0, 0);
-    margin-right: 3px;
-    background-color: transparent;
-    color: white;
+.container .Lembrar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+  background-color: transparent;
+  font-weight: 600;
 }
 
-.lembrar-senha label input:hover{
-    cursor: pointer;
-    background-color: transparent;
+.lembrar-senha label {
+  accent-color: rgb(0, 0, 0);
+  margin-right: 3px;
+  background-color: transparent;
+  color: white;
 }
 
-.lembrar-senha a{
-    color: white;
-    text-decoration: none;
-    background-color: transparent;
+.lembrar-senha label input:hover {
+  cursor: pointer;
+  background-color: transparent;
 }
 
-.lembrar-senha a:hover{
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    text-decoration: underline;
+.lembrar-senha a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
 }
 
-.container h2{
-    text-align: center;
-    margin: 20px 0;
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    background-color: transparent;
+.lembrar-senha a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
 }
 
-.container .btn{
-    width: 100%;
-    height: 45px;
-    background-color: orangered;
-    border-radius: 40px;
-    box-shadow: 0 0 5px rgb(0, 0, 0);
-    cursor: pointer;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    padding: 10px;
+.container h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
 }
 
-.container .btn:hover{
-    background-color: black;
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    transition: 0.3s;
+.container .btn {
+  width: 100%;
+  height: 45px;
+  background-color: orangered;
+  border-radius: 40px;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 10px;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  transition: 0.3s;
 }
 
 .container .registrar.link {
-    text-align: center;
-    margin: 20px 0 15px;
-    background-color: transparent;
-    color: orangered;
-    text-decoration: none;
-    font-weight: 600;
+  text-align: center;
+  margin: 20px 0 15px;
+  background-color: transparent;
+  color: orangered;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.registrar.link a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: transparent;
+.registrar.link a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: transparent;
 }
 
-.registrar.link a:hover{
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    text-decoration: underline;
+.registrar.link a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
 }
 
-.btn{
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 800;
-    margin: 20px 10px;
-    cursor: pointer;
+.btn {
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 20px 10px;
+  cursor: pointer;
 }

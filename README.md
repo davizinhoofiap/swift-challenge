@@ -1,28 +1,24 @@
-# Swift (JBS Challenge) - Sistema Gamificado de Gestão e Vendas
+# Swift (JBS Challenge) - Sistema Gamificado de Gestao e Vendas
 
-Aplicação Web Front-end interativa desenvolvida para a Swift (JBS). A plataforma utiliza estratégias de gamificação (missões diárias, metas semanais e mensais, ranking de colaboradores e lojas, loja de resgate de pontos e microtreinamentos) para aumentar o engajamento das equipes de loja, elevar o NPS e alavancar o ticket médio.
+LINK PARA VISUALIZACAO AO VIVO DO PROJETO:
+https://davizinhoofiap.github.io/swift-challenge/
+
+Aplicaçao Web Front-end interativa desenvolvida para a Swift (JBS). A plataforma utiliza estratégias de gamificaçao (missões diárias, metas semanais e mensais, ranking de colaboradores e lojas, loja de resgate de pontos e microtreinamentos) para aumentar o engajamento das equipes de loja, elevar o NPS e alavancar o ticket médio.
 
 ---
 
 ## Desenvolvedor
 
-- **Davi Victor Monte da Silva**
+- Davi Victor Monte da Silva (Estudante de Tecnologia na FIAP)
 
 ---
 
-## Link de Acesso Online (GitHub Pages)
+## Instruçoes de Acesso e Utilizaçao (Demonstraçao)
 
-Acesse a aplicação funcionando ao vivo:  
-[https://davizinhoofiap.github.io/swift-challenge/](https://davizinhoofiap.github.io/swift-challenge/)
-
----
-
-## Credenciais de Acesso (Demonstração)
-
-A página inicial do sistema é a Tela de Login. Por ser um protótipo interativo de demonstração:
-- **E-mail:** Qualquer e-mail (ex: `vendedor@swift.com.br`)
-- **Senha:** Qualquer senha (ex: `123456`)
-- **Acesso Direto:** Basta clicar no botão Login para entrar no painel principal da plataforma (`dashboard.html`).
+A página inicial do sistema é a Tela de Login (`index.html`). Por se tratar de um protótipo de demonstraçao:
+- E-mail: Qualquer e-mail valido (exemplo: vendedor@swift.com.br)
+- Senha: Qualquer senha (exemplo: 123456)
+- Acesso Direto: Clique no botão Login para entrar no painel principal da plataforma (pages/dashboard.html).
 
 ---
 
@@ -54,18 +50,28 @@ Challenge/
 │   ├── js/                         # Scripts JavaScript
 │   │   └── promocoes.js            # Filtros interativos de produtos
 │   └── images/                     # Mídias organizadas por categoria
-│       ├── brand/                  # Logotipos e marcas
-│       ├── icons/                  # Ícones vetoriais SVG
-│       ├── products/               # Imagens de produtos e cortes
-│       └── treinamento/            # Capas dos cursos de treinamento
-└── README.md                       # Documentação do projeto
+└── README.md                       # Documentaçao técnica do projeto
 ```
 
 ---
 
 ## Tecnologias Utilizadas
 
-- **HTML5**: Estruturação semântica de páginas
-- **CSS3 / Vanilla CSS**: Layouts responsivos e estilização modular
-- **Bootstrap 5 & Bootstrap Icons**: Grid responsivo, modais e iconografia
-- **JavaScript (ES6+)**: Filtros de categoria e manipulação dinâmica de DOM
+- HTML5: Estruturaçao semântica de páginas
+- CSS3 / Vanilla CSS: Layouts responsivos e estilizaçao modular
+- Bootstrap 5 & Bootstrap Icons: Grid responsivo, modais e iconografia
+- JavaScript (ES6+): Filtros de categoria e manipulaçao dinâmica do DOM
+
+---
+
+## Como Executar o Projeto Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/davizinhoofiap/swift-challenge.git
+   ```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd swift-challenge
+   ```
+3. Abra o arquivo `index.html` em qualquer navegador ou utilize um servidor local (ex: Live Server no VS Code).

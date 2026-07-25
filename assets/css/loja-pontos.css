@@ -1,249 +1,248 @@
 h1 {
-    color: var(--swift-title-color);
-    font-weight: bold;
-    border-bottom: 3px solid var(--swift-orange);
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 40px;
-    margin-top: 10px;
-    text-transform: uppercase;
+  color: var(--swift-title-color);
+  font-weight: bold;
+  border-bottom: 3px solid var(--swift-orange);
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
 }
 
 .cards-container {
-    display: flex;
-    gap: 30px; /* Espaçamento entre os cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+  display: flex;
+  gap: 30px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 15px;
-    text-align: center;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
 }
 
-
 .card .points-tag {
-    background-color: var(--swift-dark-orange);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 12px;
-    font-weight: bold;
-    margin: -25px auto 10px auto; /* Puxa a tag para cima */
+  background-color: var(--swift-dark-orange);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: -25px auto 10px auto; /* Puxa a tag para cima */
 }
 
 .card p {
-    font-size: 14px;
-    flex-grow: 1;
-    margin-bottom: 15px;
+  font-size: 14px;
+  flex-grow: 1;
+  margin-bottom: 15px;
 }
 
 .card .redeem-button {
-    background-color: #a9a9a9; /* Cinza por padrão */
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+  background-color: #a9a9a9; /* Cinza por padrão */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .redeem-button:not(.active) {
-    position: relative;
-    cursor: not-allowed;
-    transition: color 0.2s ease-in-out;
+  position: relative;
+  cursor: not-allowed;
+  transition: color 0.2s ease-in-out;
 }
 
 .redeem-button:not(.active)::before {
-    content: "Pontos Insuficientes"; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
-    color: var(--swift-gray);
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+  content: "Pontos Insuficientes";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: var(--swift-gray);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .redeem-button:not(.active):hover {
-    color: transparent; 
+  color: transparent;
 }
 
 .redeem-button:not(.active):hover::before {
-    opacity: 1; 
+  opacity: 1;
 }
 
-
-.card .reward-text{
-    margin-bottom: 0;
+.card .reward-text {
+  margin-bottom: 0;
 }
 
 .store-card-icon {
-    width: 80px;  
-    height: 80px; 
-    margin: 10px auto;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
 }
 .card .progress-text {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 10px 0;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 .card .redeem-button.active {
-    background-color: var(--swift-dark-orange); /* Laranja quando ativo */
+  background-color: var(--swift-dark-orange); /* Laranja quando ativo */
 }
 
 /* Estilos específicos para os cards de Recompensas */
 .rewards-card {
-    width: 180px;
-    padding: 20px;
+  width: 180px;
+  padding: 20px;
 }
 
 .rewards-card .progress-text {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 10px 0;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 .rewards-card .progress-text span {
-    color: var(--swift-dark-orange);
+  color: var(--swift-dark-orange);
 }
 
 .rewards-card .reward-type {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
 }
 
 /* --- Barra Lateral Direita --- */
 aside.right-sidebar {
-    width: 300px;
-    height: 500px;
-    padding: 10px;
-    border-width: 10px;
-    border-color: var(--swift-dark-orange);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 30px; /*distancia do topo para a barra "grudar"*/
-    align-self: flex-start;
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  border-width: 10px;
+  border-color: var(--swift-dark-orange);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px; /*distancia do topo para a barra "grudar"*/
+  align-self: flex-start;
 }
 
 .points-summary {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .points-summary .points {
-    font-size: 60px;
-    font-weight: bold;
-    color: var(--swift-orange);
-    line-height: 1;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--swift-orange);
+  line-height: 1;
 }
 
 .points-summary p {
-    margin: 0;
-    font-size: 18px;
+  margin: 0;
+  font-size: 18px;
 }
 
 .challenges-section ul {
-    list-style: none;
-    padding-left: 20px;
+  list-style: none;
+  padding-left: 20px;
 }
 
 .challenges-section li {
-    margin-bottom: 15px;
-    position: relative;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .challenges-section li::before {
-    content: '•';
-    color: var(--swift-orange);
-    font-weight: bold;
-    position: absolute;
-    left: -20px;
+  content: "•";
+  color: var(--swift-orange);
+  font-weight: bold;
+  position: absolute;
+  left: -20px;
 }
 
 /* --- ESTILOS PARA A BARRA LATERAL DIREITA --- */
 
 .right-sidebar {
-    background-color: var(--swift-gray);
-    border-left: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
+  background-color: var(--swift-gray);
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .points-summary {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .points-summary .points {
-    font-size: 60px;
-    font-weight: bold;
-    color: var(--swift-orange);
-    line-height: 1;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--swift-orange);
+  line-height: 1;
 }
 
 .points-summary p {
-    margin: 0;
-    font-size: 18px;
+  margin: 0;
+  font-size: 18px;
 }
 
 .points-summary a {
-    text-decoration: none;
-    color: var(--swift-orange);
-    font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--swift-orange);
+  font-size: 0.9rem;
 }
 
 .challenges-section h2 {
-    font-size: 1.5rem; 
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .challenges-section ul {
-    list-style: none;
-    padding-left: 20px;
+  list-style: none;
+  padding-left: 20px;
 }
 
 .challenges-section li {
-    margin-bottom: 15px;
-    position: relative;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .challenges-section li::before {
-    content: '•';
-    color: var(--swift-orange);
-    font-weight: bold;
-    position: absolute;
-    left: -20px;
-    font-size: 1.2rem;
+  content: "•";
+  color: var(--swift-orange);
+  font-weight: bold;
+  position: absolute;
+  left: -20px;
+  font-size: 1.2rem;
 }
